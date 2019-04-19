@@ -1,0 +1,323 @@
+﻿/***** CSS Padrão *****/
+h1 {
+    font-family: Arial;
+    font-weight: bold;
+    color: #F5F5F5;
+    font-size: 20px;
+    padding: 1%;
+}
+
+Label {
+    font-family: Arial;
+    color: #F5F5F5;
+    font-size: 12px;
+}
+
+/***** CSS Imagem *****/
+
+/***col-sm***/
+@media (min-width:576px) {
+    .img-home {
+        background: url("../img/imagem_home_sm.png");
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    .img-login-cadastro {
+        background: url("../img/img-login-sm.jpg");
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+}
+
+/***col-md***/
+@media (min-width:768px) {
+    .img-home {
+        background: url("../img/imagem_home_md.png");
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    .img-login-cadastro {
+        background: url("../img/img-login-sm.jpg");
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+}
+
+/***col-lg***/
+@media (min-width:992px) {
+    .img-home {
+        background: url("../img/imagem_home_lg.jpg");
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    .img-login-cadastro {
+        background: url("../img/img-login-lg.jpg");
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+}
+
+/**********************/
+.main-menu {
+    background-color: #003366;
+    height: 50px;
+}
+
+
+.txt-menu {
+    font-family: Arial;
+    font-weight: bold;
+    color: #F5F5F5;
+    font-size: 14px;
+}
+
+.txt-tl-home {
+    font-family: Arial;
+    font-size: 20px;
+    color: #007bff;
+}
+
+.txt-tl-home-2 {
+    font-family: Arial;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.icon-menu-principal {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.icon-fa2 {
+    font-size: 5em;
+    color: #003366;
+}
+
+.main-footer {
+    bottom: 0%;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background: #003366;
+    color: #fff;
+}
+
+.btn-padding-right {
+    padding-left: 30%;
+}
+
+.btn-padding-left {
+    padding-right: 30%;
+}
+
+.home {
+    margin-top: 5%;
+}
+
+.btn-config {
+    width: 100%;
+    height: 150%;
+}
+
+.card {
+    height: 370px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    display: block;
+    padding-top: 6%;
+    border-radius: 30px;
+}
+
+/***** Icone login *****/
+
+.card-login {
+    height: 400px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    border-radius: 30px;
+}
+
+.card-body-p {
+    padding: 10%;
+}
+
+.social_icon span {
+    font-size: 60px;
+    margin-left: 10px;
+    color: #007bff;
+}
+
+.social_icon span:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.card-header h3 {
+    color: white;
+}
+
+.social_icon {
+    position: absolute;
+    right: 37%;
+    top: 70px;
+}
+
+.input-group-prepend span {
+    width: 50px;
+    background-color: #007bff;
+    color: black;
+    border: 0 !important;
+}
+
+input:focus {
+    outline: 0 0 0 0 !important;
+    box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember {
+    color: white;
+}
+
+.remember input {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+.login_btn {
+    color: black;
+    background-color: #007bff;
+    width: 100px;
+}
+
+.login_btn:hover {
+    color: black;
+    background-color: white;
+}
+
+.links {
+    color: white;
+}
+
+.links a {
+    margin-left: 4px;
+}
+
+/***** Icone login FIM *****/
+
+.page {
+    border-radius: 10px;
+    border: 1px solid #003366;
+    margin-bottom: 3%;
+    padding: 5%;
+}
+
+.page2 {
+    border-radius: 10px;
+    border: 1px solid #003366;
+    padding-top: 25%;
+    padding-top: 1%;
+}
+
+.page-jogo {
+    border-radius: 10px;
+    border: 1px solid #003366;
+    padding: 35%;
+    padding-top: 1%;
+    background: url("../img/mapa.jpg");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    opacity: 0.5;
+
+}
+
+.card-menu {
+    padding: 0px !important;
+    background: #ffffff !important;
+    border-color: #003366 !important;
+}
+
+.flex-centralizado {
+    display: flex;
+    justify-content: center;
+    padding-top: 20%;
+}
+
+.page-body-left {
+    border-radius: 10px;
+    width: auto;
+    height: 100%;
+    padding-top: 0px;
+}
+
+.page-body-right {
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    padding-top: 0px;
+}
+
+.header-page {
+    background: #007bff;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+
+.btn-transparent {
+    background: transparent;
+    border: none;
+}
+
+
+
+.table-nq thead th {
+    background: #003366;
+    color: #fff;
+    text-align: center;
+}
+
+.tb-perguntas {
+    overflow: auto;
+    width: 1500px;
+}
+
+.bg-naval {
+    background-color: #ffffff !important;
+}
+
+.bg-naval .card-header {
+    background-color: #003366 !important;
+}
+
+.bg-naval .card-body {
+    color: #003366 !important;
+}
+
+.bg-naval .left-card {
+    color: #003366 !important;
+}
+
+
+.bg-naval label {
+    font-family: Arial;
+    font-size: 14px;
+    color: #003366;
+    font-weight: bold;
+}
+
+.scroll {
+    overflow: -webkit-paged-y;
+}
