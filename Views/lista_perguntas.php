@@ -1,7 +1,7 @@
 <main>
     <div class="">
         <div class="header-page">
-            <h1>Lista de Pergunta</h1>
+            <h1>Lista de Perguntas</h1>
         </div>
         <div class="container">
             <form method="post" action="#">
@@ -51,7 +51,6 @@
             $('body').removeClass('img-login-cadastro');
             $('body').addClass('scroll');
         });
-
     })());
     $('.dropdown-toggle').dropdown();
 

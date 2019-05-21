@@ -1,5 +1,7 @@
 <?php
 //include 'db.php';
+include("php/controllerUser.php");
+
 session_start();
 unset($_SESSION['logado']);
 $_SESSION['logado'] = false;

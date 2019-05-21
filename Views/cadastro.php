@@ -6,13 +6,13 @@
                     <h3>Cadastro</h3>
                 </div>
                 <div class="card-body card-body-p">
-                    <form>
+                    <form action="php/cadastro.php" method="post">
                         <div class="col-sm-12 col-md-12 col-lg-12">
                             <div class="input-group form-group">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-user"></i></span>
                                 </div>
-                                <input type="text" class="form-control" placeholder="Nome">
+                                <input type="text" class="form-control" placeholder="Nome" name="nome">
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-12 col-lg-12">
@@ -20,7 +20,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-user"></i></span>
                                 </div>
-                                <input type="text" class="form-control" placeholder="Sobrenome">
+                                <input type="text" class="form-control" placeholder="Sobrenome" name="sobrenome">
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-12 col-lg-12">
@@ -28,7 +28,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                                 </div>
-                                <input type="text" class="form-control" placeholder="email">
+                                <input type="text" class="form-control" placeholder="email" name="email">
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-12 col-lg-12">
@@ -36,7 +36,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="fas fa-key"></i></span>
                                 </div>
-                                <input type="password" class="form-control" placeholder="Senha">
+                                <input type="password" class="form-control" placeholder="Senha" name="senha">
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-12 col-lg-12">

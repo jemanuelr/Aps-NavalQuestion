@@ -1,3 +1,4 @@
+
 <main>
     <div class="container home">
         <div class="d-flex justify-content-center h-100">
@@ -11,26 +12,33 @@
                     </div>
                 </div>
                 <div class="card-body card-body-p">
-                    <form>
+                    <form action="php/login.php" method="post">
+                        <?php if(isset($_GET["login"]) && $_GET["login"]==true) { ?>
+                            <p class="alert-success">Logado com sucesso!</p>
+                        <?php } ?>
+
+                        <?php if(isset($_GET["login"]) && $_GET["login"]==false) { ?>
+                            <p class="alert-danger">Usuário ou senha inválida!</p>
+                        <?php } ?>
                         <div class="input-group form-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-user"></i></span>
                             </div>
-                            <input type="text" class="form-control" placeholder="username">
+                            <input type="text" class="form-control" placeholder="email" name="email">
 
                         </div>
                         <div class="input-group form-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text"><i class="fas fa-key"></i></span>
                             </div>
-                            <input type="password" class="form-control" placeholder="password">
+                            <input type="password" class="form-control" placeholder="password" name="senha">
                         </div>
                         <div class="row align-items-center remember">
                             <input type="checkbox">Lembre-me
                         </div>
                         <div class="form-group">
-                            <!---<input type="submit" value="Login" class="btn float-right login_btn">--->
-                            <a href="index.php?pagina=perfil" class="btn float-right login_btn">Login</a>
+                            <input type="submit" value="Login" class="btn float-right login_btn">
+                           <!-- <a href="index.php?pagina=perfil" class="btn float-right login_btn">Login</a> -->
                         </div>
                     </form>
                 </div>

@@ -52,7 +52,7 @@
                         <a class="nav-link" href="index.php?pagina=perguntas"><span class="icon-menu-principal"><i class="fas fa-folder-plus"></i></span></a>
                     </li>
                     <li class="nav-item active" data-toggle="tooltip" data-placement="bottom" title="Lista de perguntas">
-                        <a class="nav-link" href="index.php?pagina=login"><span class="icon-menu-principal"><i class="fas fa-list-ol"></i></span></a>
+                        <a class="nav-link" href="index.php?pagina=lista"><span class="icon-menu-principal"><i class="fas fa-list-ol"></i></span></a>
                     </li>
                     <li class="nav-item active" data-toggle="tooltip" data-placement="bottom" title="Home">
                         <a class="nav-link" href="index.php?pagina=perfil"><span class="icon-menu-principal"><i class="fas fa-user-circle"></i></span></a>

@@ -4,7 +4,7 @@
             <h1>Cadastrar Pergunta</h1>
         </div>
         <div class="container ">
-            <form method="post" action="#">
+            <form action="/php/cadastro-questao.php" method="post"">
                 <div class="row">
                     <div class="col-sm-12 col-md-8 col-lg-8 ">
                         <div class="card bg-naval page-body-left">
@@ -12,10 +12,11 @@
                                 <h3>Questão:</h3>
                             </div>
                             <div class="card-body left-card">
+                                <!-- Grupo da pargunta -->
                                 <div class="row">
                                     <div class="col-sm-12 col-md-12 col-lg-12">
                                         <label>Grupo da pergunta</label>
-                                        <select class="form-control form-control-lg">
+                                        <select class="form-control form-control-lg" name="grupo">
                                             <option>Selecione opção</option>
                                             <option>PHP</option>
                                             <option>HTML</option>
@@ -24,18 +25,20 @@
                                         </select>
                                     </div>
                                 </div>
+                                <!-- Pergunta -->
                                 <div class="row">
                                     <div class="col-sm-12 col-md-12 col-lg-12 mt-5">
                                         <div class="form-group">
                                             <label for="exampleFormControlTextarea1">Descrição da questão</label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="pergunta"></textarea>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- Sequencia da pargunta -->
                                 <div class="row mt-3">
                                     <div class="col-sm-12 col-md-6 col-lg-6">
                                         <label>Número perguntas</label>
-                                        <select class="form-control">
+                                        <select class="form-control" name="sequencia">
                                             <option>Selecione opção</option>
                                             <option>1</option>
                                             <option>2</option>
@@ -44,9 +47,10 @@
                                             <option>5</option>
                                         </select>
                                     </div>
+                                    <!-- Resposta da pargunta -->
                                     <div class="col-sm-12 col-md-6 col-lg-6">
                                         <label>Resposta correta</label>
-                                        <select class="form-control">
+                                        <select class="form-control" name="resposta">
                                             <option>Selecione opção</option>
                                             <option>A</option>
                                             <option>B</option>
@@ -75,35 +79,35 @@
                                 <div class="col-sm-12 col-md-12 col-lg-12">
                                     <div class="form-group">
                                         <label for="exampleFormControlInput1">A</label>
-                                        <input type="email" class="form-control" id="pergA" placeholder="Pergunta A">
+                                        <input type="email" class="form-control" id="pergA" placeholder="Resposta A", name="respostaa">
                                     </div>
                                 </div>
 
                                 <div class="col-sm-12 col-md-12 col-lg-12">
                                     <div class="form-group">
                                         <label for="exampleFormControlInput1">B</label>
-                                        <input type="email" class="form-control" id="pergB" placeholder="Pergunta B">
+                                        <input type="email" class="form-control" id="pergB" placeholder="Resposta B" name="respostab">
                                     </div>
                                 </div>
 
                                 <div class="col-sm-12 col-md-12 col-lg-12">
                                     <div class="form-group">
                                         <label for="exampleFormControlInput1">C</label>
-                                        <input type="email" class="form-control" id="pergC" placeholder="Pergunta C">
+                                        <input type="email" class="form-control" id="pergC" placeholder="Resposta C" name="respostac">
                                     </div>
                                 </div>
 
                                 <div class="col-sm-12 col-md-12 col-lg-12">
                                     <div class="form-group">
                                         <label for="exampleFormControlInput1">D</label>
-                                        <input type="email" class="form-control" id="pergD" placeholder="Pergunta D">
+                                        <input type="email" class="form-control" id="pergD" placeholder="Resposta D" name="respostad">
                                     </div>
                                 </div>
 
                                 <div class="col-sm-12 col-md-12 col-lg-12">
                                     <div class="form-group">
                                         <label for="exampleFormControlInput1">E</label>
-                                        <input type="email" class="form-control" id="pergE" placeholder="Pergunta E">
+                                        <input type="email" class="form-control" id="pergE" placeholder="Resposta E" name="respostae">
                                     </div>
 
                                 </div>
