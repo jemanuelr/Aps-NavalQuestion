@@ -17,7 +17,7 @@ function usuarioLogado() {
 
 function logaUsuario($email) {
     session_start();
-    $_SESSION["usuario_logado"] =  $email;
+    $_SESSION["logado"] = $email;
 }
 
 function logout(){

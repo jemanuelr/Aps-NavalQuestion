@@ -1,3 +1,8 @@
+<?php
+include("php/QuestaoController.php");
+
+$controller = new questaoController();
+?>
 <main>
     <div class="">
         <div class="header-page">
@@ -13,28 +18,37 @@
                         <table id="myTable" class="table table-striped table-bordered">
                             <thead class="thead-dark">
                                 <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Questão</th>
-                                    <th scope="col">Perg A</th>
-                                    <th scope="col">Perg B</th>
-                                    <th scope="col">Perg C</th>
-                                    <th scope="col">Perg D</th>
-                                    <th scope="col">Perg E</th>
-                                    <th scope="col">Resp Correta</th>
-
+                                    <th scope="col">GRUPO</th>
+                                    <th scope="col">PERGUNTA</th>
+                                    <th scope="col">RESPOSTA CERTA</th>
+                                    <th scope="col">RESP A</th>
+                                    <th scope="col">RESP B</th>
+                                    <th scope="col">RESP C</th>
+                                    <th scope="col">RESP D</th>
+                                    <th scope="col">RESP E</th>
+                                    <th scope="col">ALTERAR</th>
+                                    <th scope="col">DELETAR</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>A respeito da JSP (JavaServer Pages), assinale a opção correta.</td>
-                                    <td>As páginas JSP compiladas não precisam ser executadas em uma máquina virtual Java (JVM).</td>
-                                    <td>O scriptlet é o conteúdo integral de um trecho de código Java que esteja dentro das tags </td>
-                                    <td>O comando avalia uma expressão e insere o seu resultado na saída, podendo o conteúdo do atributo value ser dinâmico como um texto literal ou uma expressão escrita.</td>
-                                    <td>O método POST do HTML não pode ser utilizado para enviar ou receber dados.</td>
-                                    <td>Uma página criada com a tecnologia JSP, depois de instalada em um servidor de aplicação compatível, estará pronta para ser executada, não havendo a necessidade de ela ser transformada em um Servlet.</td>
-                                    <td>A</td>
-                                </tr>
+
+                                    <?php
+                                    $results = $controller->listaQuestaos();
+                                        foreach ($results as $result) :
+                                            echo '<tr>';
+                                            echo '<td>' . $result['grupo'] . '</td>';
+                                            echo '<td>' . $result['pergunta'] . '</td>';
+                                            echo '<td>' . $result['respostaCerta'] . '</td>';
+                                            echo '<td>' . $result['respostaA'] . '</td>';
+                                            echo '<td>' . $result['respostaB'] . '</td>';
+                                            echo '<td>' . $result['respostaC'] . '</td>';
+                                            echo '<td>' . $result['respostaD'] . '</td>';
+                                            echo '<td>' . $result['respostaE'] . '</td>';
+                                            echo '<td> <a href=index.php?pagina=perguntas&id='. $result['id'].'&tipo=Alteracao>Alterar</td>';
+                                            echo '<td> <a href=php/deletar.php?id='. $result['id'].'>Delete</td>';
+                                            echo '</tr>';
+                                        endforeach;
+                                    ?>
                             </tbody>
                         </table>
                     </div>

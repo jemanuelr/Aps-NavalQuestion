@@ -31,7 +31,7 @@
             </div>
             <div class="collapse navbar-collapse" id="navMenuPrincipal">
                 <?php 
-               if (isset($_SESSION['logado']) && empty($_SESSION['logado'])){?>
+               if (empty($_SESSION['logado'])){?>
                 <ul class="navbar-nav ml-md-auto">
                     <li class="nav-item active" data-toggle="tooltip" data-placement="bottom" title="Login">
                         <a class=" nav-link txt-menu text-sm-left text-md-left" href="index.php?pagina=login">Login</a>

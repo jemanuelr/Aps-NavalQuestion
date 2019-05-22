@@ -1,9 +1,11 @@
 <?php
 include("conecta.php");
-include ("banco-usuario.php");
+include("UserController.php");
 include ("controllerUser.php");
 
-$usuario = buscaUsuario($conexao, $_POST["email"], $_POST["senha"]);
+$cone = new userController();
+
+$usuario = $cone->buscaUsuario($_POST["email"], $_POST["senha"]);
 
 if($usuario == null) {
     header("Location: ../index.php?pagina=login");

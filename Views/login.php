@@ -12,7 +12,7 @@
                     </div>
                 </div>
                 <div class="card-body card-body-p">
-                    <form action="php/login.php" method="post">
+                    <form action="php/loginUser.php" method="post">
                         <?php if(isset($_GET["login"]) && $_GET["login"]==true) { ?>
                             <p class="alert-success">Logado com sucesso!</p>
                         <?php } ?>
